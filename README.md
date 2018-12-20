@@ -1,6 +1,4 @@
----
-title: Sparse Bayes Generalized Linear Models
----
+# `SBGLM`: Sparse Bayes Generalized Linear Models
 
 ## Installation
 
