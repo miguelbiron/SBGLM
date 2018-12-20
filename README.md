@@ -1,4 +1,4 @@
-`BIDC`: Bayesian Inference for Default Correlations
+`SBGLM`: Sparse Bayes Generalized Linear Models
 
 ## Installation
 
