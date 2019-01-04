@@ -2,7 +2,7 @@
 # main function for running the chain
 ###############################################################################
 
-#' Gibbs sampler for a Bayesian sparse linear regression model
+#' Gibbs sampler for a sparse Bayesian linear regression model
 #'
 #' This function runs a Gibbs sampler for a Bayesian linear regression model
 #' that explicitly allows for sparse solutions, in the spirit of the spike and
@@ -46,7 +46,7 @@
 #' 83} (404). Taylor & Francis Group: 1023–32.
 #'
 #' @export
-bslm_gibbs = function(X, y, hp = NULL, S, verbose = 0L){
+sblm_gibbs = function(X, y, hp = NULL, S, verbose = 0L){
 
   stopifnot(nrow(X)==length(y)) # sanity check
 
