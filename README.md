@@ -15,11 +15,15 @@ The purpose of this package is mainly a way to store a lot of code that I have r
 
 ## Implemented models
 
+- A Bayesian sparse linear regression model (`bslm`)
+    - Similar in spirit to the spike-and-slab, but with a slightly different approach. I describe this model in [this blog entry](https://miguelbiron.github.io).
 - Non-parametric Sparse Factor Analysis (Knowles and Ghahramani 2011).
     - Check out [this blog entry](https://miguelbiron.github.io/2018/12/20/sbglm-sparse-bayes-generalized-linear-models/) where you can find more information on this model.
 
 ## TODO
 
+- BSLM
+    - Should we treat an intercept differently?
 - NSFA
     - Use pre-allocated matrices instead of current naive solution of varying size dynamically.
 - Add more models.

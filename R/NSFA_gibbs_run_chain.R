@@ -59,7 +59,7 @@ init_chain = function(Y, hp){
 #'
 #' The model was originally proposed in Knowles & Ghahramani (2011). However, you
 #' can read my own report evaluating this model
-#' \href{https://miguelbiron.github.io/}{here}.
+#' \href{https://miguelbiron.github.io/docs/STAT548_report_3_NSFA.pdf}{here}.
 #'
 #' The following hyperparameters can be supplied by the user through \code{hp}.
 #' Default values are in parenthesis and tend to work well.
@@ -81,7 +81,8 @@ init_chain = function(Y, hp){
 #'
 #' @param S number of iterations for the chain.
 #' @param Y matrix with the observed data, of size \code{D x N}.
-#' @param hp list of hyperparameters (see Details).
+#' @param hp list of hyperparameters. See Details for a description and default
+#' values used.
 #' @param Y_test matrix with test set for assessing out-of-sample performance.
 #' Number of columns must be same as \code{Y} (\code{N}).
 #' @param R function returns last \code{R} values in the chain. Default is 1.
@@ -116,7 +117,7 @@ NSFA_gibbs = function(S, Y, hp = NULL, Y_test = NULL, R = 1L, verbose = 0L){
     # MH proposal. lambda from same source, pi from paper.
     hp$lambda_MH = 10; hp$pi_MH = 0.1
   } else{
-    stopifnot(length(hp) != 10L) # sanity check
+    stopifnot(length(hp) == 10L) # sanity check
   }
 
   # initialize chain

@@ -11,7 +11,8 @@ NSFA_gibbs(S, Y, hp = NULL, Y_test = NULL, R = 1L, verbose = 0L)
 
 \item{Y}{matrix with the observed data, of size \code{D x N}.}
 
-\item{hp}{list of hyperparameters (see Details).}
+\item{hp}{list of hyperparameters. See Details for a description and default
+values used.}
 
 \item{Y_test}{matrix with test set for assessing out-of-sample performance.
 Number of columns must be same as \code{Y} (\code{N}).}
@@ -37,7 +38,7 @@ article.
 \details{
 The model was originally proposed in Knowles & Ghahramani (2011). However, you
 can read my own report evaluating this model
-\href{https://miguelbiron.github.io/}{here}.
+\href{https://miguelbiron.github.io/docs/STAT548_report_3_NSFA.pdf}{here}.
 
 The following hyperparameters can be supplied by the user through \code{hp}.
 Default values are in parenthesis and tend to work well.
